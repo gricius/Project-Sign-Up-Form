@@ -1,54 +1,155 @@
 @font-face {
-    font-family: 'Norse';
+    font-family: Norse-Bold;
     src: url(fonts/Norse-Bold.otf);
 }
 
 body {
     margin: 0;
     padding: 0;
-    /* font-family: 'Norse', sans-serif;
-    background-color: rgb(247, 244, 244); */
+    font-family: Arial, Helvetica, sans-serif
 }
 
-.container {
+h1 {
+    font-size: 50px;
+    font-family: Norse-Bold;
+}
+
+.main {
     display: flex;
     flex-direction: row;
     width: 100vw;
     height: 100vh;
 }
 
-.column-left {
+.col-left {
     background-image: url('images/signup-bg.jpg');
     width: 35vw;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    font-family: 'Norse', sans-serif;
-}
-
-.column-right {
     display: flex;
     flex-direction: column;
 }
 
-.top {
-    height: 40vh;
-    background-color: rgb(247, 244, 244);
-    font-weight: 900;
-    padding: 100px;
+.col-right {
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    width: 65vw;
 }
 
-.form {
-    height: 30vh;
+.right-top {
+    height: 25vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 5%;
+    margin-right: 20%;
+}
+
+.right-mid {
     background-color: white;
-    padding: 100px;
-    align-self: stretch;
+    height: 33vh;
+    align-items: center;
+    box-shadow: 2px 5px #E5E7EB;
 }
 
-.bottom {
-    height: 30vh;
-    background-color: rgb(247, 244, 244);
-    font-weight: 900;
-    padding: 100px;
-    align-self: stretch;
+.form-main-div {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    width: 60%;
+    justify-content: space-between;
+}
+
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 200px;
+    border: 1px solid #E5E7EB;
+    height: 25px;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 1px solid blue;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+label {
+    font-size: 10px;
+    color: #3b3b3c;
+}
+
+#error {
+    color: red;
+    font-size: 10px;
+    margin: 1px;
+}
+
+.button {
+    background-color: #596D48;
+    color: white;
+    border: 1px solid #596D48;
+    border-radius: 10px;
+    height: 40px;
+    width: 175px;
+    font-weight: bolder;
+    font-size: small;
+    box-shadow: 2px 5px #E5E7EB;
+}
+
+.right-bottom {
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.hyperlink {
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.login {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.a-footer {
+    color: white;
+}
+
+.p-footer {
+    font-size: 12px;
+}
+
+.forImage {
+    height: 34vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.forFooter {
+    height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+
+.semi-transparent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
 }
